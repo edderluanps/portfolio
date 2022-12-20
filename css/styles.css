@@ -1,0 +1,1798 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*Formatação*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+}
+
+/*Scroll bar personalizado*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #02040c;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+
+/*Scroll up*/
+.btn-scroll-up{
+    background: #33e1ed;
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    right: 30px;
+    bottom: 30px;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.btn-scroll-up.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*Navbar*/
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    color: #fff;
+    background: #1e1e2c;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar .menu-icon{
+    color: #fff;
+    display: none;
+}
+
+.navbar .logo {
+    height: 100%;
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo h2 {
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.navbar .logo h2 span {
+    color: #cdcdcd;
+    transition: all 0.5s ease;
+}
+
+.navbar .menu-itens {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .menu-itens a {
+    padding: 0 20px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.navbar .menu-itens a:hover{
+    color: #33e1ed;
+}
+
+/*Sidenav - Mobile*/
+.sidenav{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #02040c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 20px;
+    transition: all 0.8s ease;
+}
+
+.sidenav a{
+    font-size: 50px;
+    transition: all 0.5s ease;
+}
+
+.sidenav a:hover{
+    color: #33e1ed;
+}
+
+/*Header*/
+.header{
+    height: 600px;
+    width: 100%;
+    background: rgb(30,30,44);
+    background: linear-gradient(90deg, rgba(30,30,44,1) 0%, rgba(45,45,68,1) 14%, rgba(51,225,237,1) 87%);
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px 50px 200px;
+}
+
+.header .col-1{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+.header .col-1 h1{
+    font-size: 75px;
+}
+
+.header .col-1 h2{
+    font-size: 30px;
+}
+
+.header .col-1 h3{
+    font-size: 20px;
+}
+
+.header .col-1 .btn-ver-linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 200px;
+    margin: 20px 0 0 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.header .col-1 .btn-ver-linkedin:hover{
+    background: #fff;
+    color: #000;
+}
+
+.header .col-2{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .col-2 img{
+    height: 100%;
+    width: 80%;
+}
+
+
+/*Sobre*/
+.sobre{
+    background: rgb(230,230,230);
+    background: linear-gradient(0deg, rgba(230,230,230,1) 35%, rgba(255,255,255,1) 78%);
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .row-1{
+    height: 30%;
+    width: 100%;
+    padding: 50px 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre .row-1 h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.sobre .row-1 p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.sobre .row-2{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .row-2 .box{
+    height: 850px;
+    width: 80%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre .row-2 .box .col-1{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 50px;
+}
+
+.sobre .row-2 .box .col-1 img{
+    height: 60px;
+    width: 60px;
+}
+
+.sobre .row-2 .box .col-1 h2{
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sobre .row-2 .box .col-1 p{
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+.sobre .row-2 .box .col-1 li{
+    list-style: none;
+}
+
+.sobre .row-2 .box .col-2{
+    height: 100%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 50px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.sobre .row-2 .box .col-2 img{
+    height: 60px;
+    width: 60px;
+}
+
+.sobre .row-2 .box .col-2 h2{
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sobre .row-2 .box .col-2 p{
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+.sobre .row-2 .box .col-2 li{
+    list-style: none;
+}
+
+.sobre .row-2 .box .col-3{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 50px;
+}
+
+.sobre .row-2 .box .col-3 img{
+    height: 60px;
+    width: 60px;
+}
+
+.sobre .row-2 .box .col-3 h2{
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.sobre .row-2 .box .col-3 p{
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+.sobre .row-2 .box .col-3 ul{
+   padding: 0 0 20px;
+}
+
+.sobre .row-2 .box .col-3 li{
+    list-style: none;
+}
+
+
+/*Projetos*/
+.projetos{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:  #e6e6e6;
+}
+
+.projetos .row-1{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0 0 0;
+}
+
+.projetos .row-1 h2, h4{
+    text-align: center;
+}
+
+.projetos .row-2{
+    padding: 10px 50px;
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.projetos .row-2 .card{
+    border-radius: 5px;
+    height: 320px;
+    width: 400px;
+    background: #f0f0f0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projetos .row-2 .card .row-row-1{
+    height: 70%;
+    width: 100%;
+}
+
+.projetos .row-2 .card .row-row-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.projetos .row-2 .card .row-row-2{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projetos .row-2 .card .row-row-2 h2{
+    font-size: 17px;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.projetos .row-2 .card .row-row-2 a{
+    font-size: 17px;
+    color: #000;
+}
+
+.projetos .row-2 .card .row-row-2 h2:hover{
+    color: #33e1ed;
+}
+
+.projetos .row-2 .card .row-row-2 p{
+    font-size: 15px;
+}
+
+.projetos .row-3{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos .row-3 .btn-ir-github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 150px;
+    color: #02040c;
+    border: 1px solid #02040c;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.projetos .row-3 .btn-ir-github:hover{
+    background: #02040c;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+/*Contato*/
+.contato{
+    background: #fff;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato .row-1{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .row-1 h2{
+    text-align: center;
+}
+
+.contato .row-2{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contato .row-2 .col-1{
+    height: 100%;
+    width: 50%;
+    padding: 0 50px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contato .row-2 .col-1 .card{
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 5px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.contato .row-2 .col-1 .card .icon{
+    height: 100%;
+    width: 20%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .row-2 .col-1 .card .dados{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contato .row-2 .col-2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato .row-2 .col-2 img{
+    height: 100%;
+    width: 70%;
+}
+
+
+/*Footer*/
+.footer{
+    height: 200px;
+    width: 100%;
+    background: #02040c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contato-icones{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .contato-icones a{
+    padding: 0 20px;
+}
+
+.footer .contato-icones i{
+    font-size: 20px;
+}
+
+.footer p, a{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* ----- Responsividade/Media Querys -----*/
+
+/* Desktops, Notebooks - 1280 × 720 (HD) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar {
+        height: 70px;
+        width: 100%;
+        padding: 0 150px;
+    }
+
+/***/
+    .header{
+        height: 500px;
+        width: 100%;
+        padding: 50px 100px 50px 200px;
+    }
+    
+    .header .col-1{
+        height: 100%;
+        width: 40%;
+    }
+    
+    .header .col-1 h1{
+        font-size: 50px;
+    }
+    
+    .header .col-1 h2{
+        font-size: 20px;
+    }
+    
+    .header .col-1 h3{
+        font-size: 15px;
+    }
+    
+    .header .col-1 .btn-ver-linkedin{
+        margin: 20px 0 0 20px;
+    }
+    
+    .header .col-2{
+        height: 100%;
+        width: 60%;
+    }
+    
+    .header .col-2 img{
+        height: 100%;
+        width: 80%;
+    }
+    
+/***/
+    .sobre{
+        height: 1000px;
+        width: 100%;
+    }
+    
+    .sobre .row-1{
+        height: 30%;
+        width: 100%;
+        padding: 50px 250px;
+    }
+    
+    .sobre .row-1 h2{
+        font-size: 18px;
+        padding: 0 0 20px;
+    }
+    
+    .sobre .row-1 p{
+        font-size: 15px;
+    }
+    
+    .sobre .row-2{
+        height: 80%;
+        width: 100%;
+    }
+    
+    .sobre .row-2 .box{
+        height: 750px;
+        width: 70%;
+        border-radius: 10px;
+    }
+  
+/***/
+    .sobre .row-2 .box .col-1{
+        height: 100%;
+        width: 33%;
+        padding: 70px 30px;
+    }
+    
+    .sobre .row-2 .box .col-1 img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .sobre .row-2 .box .col-1 h2{
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .sobre .row-2 .box .col-1 p{
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+
+    .sobre .row-2 .box .col-1 li{
+        font-size: 14px;
+    }     
+    
+ /***/
+    .sobre .row-2 .box .col-2{
+        height: 100%;
+        width: 34%;
+        padding: 70px 30px;
+    }
+
+    .sobre .row-2 .box .col-2 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-2 h2{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-2 p{
+        padding: 0 0 20px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-2 li{
+        font-size: 14px;
+    }
+    
+/***/
+    .sobre .row-2 .box .col-3{
+        height: 100%;
+        width: 33%;
+        padding: 70px 30px;
+    }
+
+    .sobre .row-2 .box .col-3 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-3 h2{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-3 p{
+        padding: 0 0 20px;
+        font-size: 14px;
+    }
+ 
+    .sobre .row-2 .box .col-3 li{
+        font-size: 14px;
+    }    
+
+/***/
+    .projetos{
+        height: 700px;
+        width: 100%;
+    }
+
+    .projetos .row-1{
+        height: 150px;
+        width: 100%;
+        padding: 75px 0 0 0;
+    }
+
+    .projetos .row-1 h2, h4{
+        text-align: center;
+    }
+
+    .projetos .row-2{
+        padding: 10px 30px;
+        height: auto;
+        min-height: 400px;
+        width: 100%;;
+    }
+
+    .projetos .row-2 .card{
+        border-radius: 5px;
+        height: 300px;
+        width: 320px;
+    }
+
+    .projetos .row-2 .card .row-row-1{
+        height: 70%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-1 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .projetos .row-2 .card .row-row-2{
+        height: 30%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-2 h2, a{
+        font-size: 15px;
+    }
+
+    .projetos .row-2 .card .row-row-2 p{
+        font-size: 14px;
+    }
+
+    .projetos .row-3{
+        height: 100px;
+        width: 100%;
+    }
+
+    .projetos .row-3 .btn-ir-github{
+        flex-direction: row;
+        height: 50px;
+        width: 150px;
+    }
+
+    .projetos .row-3 .btn-ir-github:hover{
+        border: 1px solid #fff;
+    }
+
+/***/    
+    .contato{
+        height: 600px;
+        width: 100%;
+    }
+
+    .contato .row-1{
+        height: 150px;
+        width: 100%;
+    }
+
+    .contato .row-1 h2{
+        text-align: center;
+    }
+
+    .contato .row-2{
+        height: 400px;
+        width: 100%;
+    }
+
+    .contato .row-2 .col-1{
+        height: 100%;
+        width: 50%;
+        padding: 0 50px 0 150px;
+    }
+
+    .contato .row-2 .col-1 .card{
+        height: 100px;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .contato .row-2 .col-2{
+        height: 100%;
+        width: 50%;
+    }
+
+    .contato .row-2 .col-2 img{
+        height: 100%;
+        width: 75%;
+    }
+
+/***/
+    .footer{
+        height: 150px;
+        width: 100%;
+    }
+
+    .footer .contato-icones{
+        height: 100px;
+        width: 200px;
+    }
+
+    .footer .contato-icones a{
+        padding: 0 20px;
+    }
+
+    .footer .contato-icones i{
+        font-size: 20px;
+    }
+
+    .footer p, a{
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+/* Tablets, Ipads (portrait) - 768px x 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        height: 70px;
+        width: 100%;
+        padding: 0 75px;
+    }
+
+/***/
+    .header{
+        height: 450px;
+        width: 100%;
+        padding: 50px 100px;
+    }
+    
+    .header .col-1{
+        height: 100%;
+        width: 40%;
+    }
+    
+    .header .col-1 h1{
+        font-size: 45px;
+    }
+    
+    .header .col-1 h2{
+        font-size: 20px;
+    }
+    
+    .header .col-1 h3{
+        font-size: 15px;
+    }
+    
+    .header .col-1 .btn-ver-linkedin{
+        margin: 20px 0 0 10px;
+    }
+    
+    .header .col-2{
+        height: 100%;
+        width: 60%;
+    }
+    
+    .header .col-2 img{
+        height: 100%;
+        width: 80%;
+    }
+    
+/***/
+    .sobre{
+        height: 1000px;
+        width: 100%;
+    }
+    
+    .sobre .row-1{
+        height: 30%;
+        width: 100%;
+        padding: 50px 150px;
+    }
+    
+    .sobre .row-1 h2{
+        font-size: 15px;
+        padding: 0 0 20px;
+    }
+    
+    .sobre .row-1 p{
+        font-size: 14px;
+    }
+    
+    .sobre .row-2{
+        height: 70%;
+        width: 100%;
+    }
+    
+    .sobre .row-2 .box{
+        height: 750px;
+        width: 80%;
+        border-radius: 10px;
+    }
+  
+/***/
+    .sobre .row-2 .box .col-1{
+        height: 100%;
+        width: 33%;
+        padding: 70px 30px;
+    }
+    
+    .sobre .row-2 .box .col-1 img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .sobre .row-2 .box .col-1 h2{
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .sobre .row-2 .box .col-1 p{
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+
+    .sobre .row-2 .box .col-1 li{
+        font-size: 14px;
+    }
+    
+ /***/
+    .sobre .row-2 .box .col-2{
+        height: 100%;
+        width: 34%;
+        padding: 70px 30px;
+    }
+
+    .sobre .row-2 .box .col-2 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-2 h2{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-2 p{
+        padding: 0 0 20px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-2 li{
+        font-size: 14px;
+    }
+    
+/***/
+    .sobre .row-2 .box .col-3{
+        height: 100%;
+        width: 33%;
+        padding: 70px 30px;
+    }
+
+    .sobre .row-2 .box .col-3 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-3 h2{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-3 p{
+        padding: 0 0 20px;
+        font-size: 14px;
+    }
+
+    .sobre .row-2 .box .col-3 li{
+        font-size: 14px;
+    }    
+
+/***/
+    .projetos{
+        height: 700px;
+        width: 100%;
+    }
+
+    .projetos .row-1{
+        height: 150px;
+        width: 100%;
+        padding: 75px 0 0 0;
+    }
+
+    .projetos .row-1 h2, h4{
+        text-align: center;
+    }
+
+    .projetos .row-2{
+        padding: 10px 30px;
+        height: auto;
+        min-height: 450px;
+        width: 100%;;
+    }
+
+    .projetos .row-2 .card{
+        border-radius: 5px;
+        height: 250px;
+        width: 270px;
+    }
+
+    .projetos .row-2 .card .row-row-1{
+        height: 70%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-1 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .projetos .row-2 .card .row-row-2{
+        height: 30%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-2 h2, a{
+        font-size: 14px;
+    }
+
+    .projetos .row-2 .card .row-row-2 p{
+        font-size: 12px;
+    }
+
+    .projetos .row-3{
+        height: 100px;
+        width: 100%;
+    }
+
+    .projetos .row-3 .btn-ir-github{
+        flex-direction: row;
+        height: 50px;
+        width: 150px;
+    }
+
+    .projetos .row-3 .btn-ir-github:hover{
+        border: 1px solid #fff;
+    }
+
+/***/    
+    .contato{
+        height: 600px;
+        width: 100%;
+    }
+
+    .contato .row-1{
+        height: 150px;
+        width: 100%;
+    }
+
+    .contato .row-1 h2{
+        text-align: center;
+    }
+
+    .contato .row-2{
+        height: 400px;
+        width: 100%;
+    }
+
+    .contato .row-2 .col-1{
+        height: 100%;
+        width: 50%;
+        padding: 0 50px 0 100px;
+    }
+
+    .contato .row-2 .col-1 .card{
+        height: 100px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .contato .row-2 .col-2{
+        height: 100%;
+        width: 50%;
+    }
+
+    .contato .row-2 .col-2 img{
+        height: 100%;
+        width: 90%;
+    }
+
+/***/
+    .footer{
+        height: 150px;
+        width: 100%;
+    }
+
+    .footer .contato-icones{
+        height: 100px;
+        width: 200px;
+    }
+
+    .footer .contato-icones a{
+        padding: 0 20px;
+    }
+
+    .footer .contato-icones i{
+        font-size: 20px;
+    }
+
+    .footer p, a{
+        font-size: 14px;
+    }
+}
+
+
+
+/* Phablets (portrait) - 480px x 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .navbar {
+        height: 70px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .navbar .logo{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .logo .menu-icon{
+        color: #fff;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px 0 0;
+    }
+
+    .navbar .menu-itens{
+        display: none;
+    }
+
+/***/
+    .header{
+        height: 350px;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .header .col-1{
+        height: 100%;
+        width: 40%;
+    }
+    
+    .header .col-1 h1{
+        font-size: 30px;
+    }
+    
+    .header .col-1 h2{
+        font-size: 15px;
+    }
+    
+    .header .col-1 h3{
+        font-size: 12px;
+    }
+    
+    .header .col-1 .btn-ver-linkedin{
+        margin: 10px 0 0 0;
+    }
+    
+    .header .col-2{
+        height: 100%;
+        width: 60%;
+    }
+    
+    .header .col-2 img{
+        height: 100%;
+        width: 80%;
+    }
+    
+/***/
+    .sobre{
+        height: 1000px;
+        width: 100%;
+    }
+    
+    .sobre .row-1{
+        height: 30%;
+        width: 100%;
+        padding: 50px 75px;
+    }
+    
+    .sobre .row-1 h2{
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+    
+    .sobre .row-1 p{
+        font-size: 12px;
+    }
+    
+    .sobre .row-2{
+        height: 70%;
+        width: 100%;
+    }
+    
+    .sobre .row-2 .box{
+        height: 750px;
+        width: 90%;
+        border-radius: 10px;
+    }
+  
+/***/
+    .sobre .row-2 .box .col-1{
+        height: 100%;
+        width: 33%;
+        padding: 50px 30px;
+    }
+    
+    .sobre .row-2 .box .col-1 img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .sobre .row-2 .box .col-1 h2{
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .sobre .row-2 .box .col-1 p{
+        font-size: 13px;
+        padding: 0 0 10px;
+    }
+
+    .sobre .row-2 .box .col-1 li{
+        font-size: 12px;
+    }
+    
+ /***/
+    .sobre .row-2 .box .col-2{
+        height: 100%;
+        width: 33%;
+        padding: 50px 30px;
+    }
+
+    .sobre .row-2 .box .col-2 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-2 h2{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .sobre .row-2 .box .col-2 p{
+        font-size: 13px;
+        padding: 0 0 10px;
+    }
+
+    .sobre .row-2 .box .col-2 li{
+        font-size: 12px;
+    }
+    
+/***/
+    .sobre .row-2 .box .col-3{
+        height: 100%;
+        width: 33%;
+        padding: 50px 30px;
+    }
+
+    .sobre .row-2 .box .col-3 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-3 h2{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .sobre .row-2 .box .col-3 p{
+        font-size: 13px;
+        padding: 0 0 10px;
+    }
+
+    .sobre .row-2 .box .col-3 li{
+        font-size: 12px;
+    }
+
+/***/
+    .projetos{
+        height: 800px;
+        width: 100%;
+    }
+
+    .projetos .row-1{
+        height: 150px;
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+
+    .projetos .row-1 h2, h4{
+        text-align: center;
+    }
+
+    .projetos .row-2{
+        padding: 10px 30px 0 50px;
+        height: auto;
+        min-height: 350px;
+        width: 100%;;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .projetos .row-2 .card{
+        border-radius: 5px;
+        height: 200px;
+        width: 250px;
+    }
+
+    .projetos .row-2 .card .row-row-1{
+        height: 70%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-1 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .projetos .row-2 .card .row-row-2{
+        height: 30%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-2 h2, a{
+        font-size: 12px;
+    }
+
+    .projetos .row-2 .card .row-row-2 p{
+        font-size: 10px;
+    }
+
+    .projetos .row-3{
+        height: 100px;
+        width: 100%;
+    }
+
+    .projetos .row-3 .btn-ir-github{
+        margin-top: 10px;
+        flex-direction: row;
+        height: 50px;
+        width: 150px;
+    }
+
+    .projetos .row-3 .btn-ir-github:hover{
+        border: 1px solid #fff;
+    }
+
+/***/    
+    .contato{
+        height: 600px;
+        width: 100%;
+    }
+
+    .contato .row-1{
+        height: 150px;
+        width: 100%;
+    }
+
+    .contato .row-1 h2{
+        text-align: center;
+    }
+
+    .contato .row-2{
+        height: 400px;
+        width: 100%;
+    }
+
+    .contato .row-2 .col-1{
+        height: 100%;
+        width: 100%;
+        padding: 0 50px 0 50px;
+    }
+
+    .contato .row-2 .col-1 .card{
+        height: 100px;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .contato .row-2 .col-2{
+        height: 0;
+        width: 0;
+    }
+
+/***/
+    .footer{
+        height: 150px;
+        width: 100%;
+    }
+
+    .footer .contato-icones{
+        height: 100px;
+        width: 200px;
+    }
+
+    .footer .contato-icones a{
+        padding: 0 20px;
+    }
+
+    .footer .contato-icones i{
+        font-size: 20px;
+    }
+
+    .footer p, a{
+        font-size: 12px;
+    }
+}
+
+/* Smartphones (portrait) - 320px x 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar {
+        height: 70px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .navbar .logo{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .logo .menu-icon{
+        color: #fff;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px 0 0;
+    }
+
+    .navbar .menu-itens{
+        display: none;
+    }
+
+/***/
+    .header{
+        height: 350px;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .header .col-1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header .col-1 h1{
+        font-size: 30px;
+    }
+    
+    .header .col-1 h2{
+        font-size: 15px;
+    }
+    
+    .header .col-1 h3{
+        font-size: 12px;
+    }
+    
+    .header .col-1 .btn-ver-linkedin{
+        margin: 10px 0 0 0;
+    }
+    
+    .header .col-2{
+        height: 0;
+        width: 0;
+    }
+    
+/***/
+    .sobre{
+        height: 1000px;
+        width: 100%;
+    }
+    
+    .sobre .row-1{
+        height: 30%;
+        width: 100%;
+        padding: 50px 20px;
+    }
+    
+    .sobre .row-1 h2{
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+    
+    .sobre .row-1 p{
+        font-size: 12px;
+    }
+    
+    .sobre .row-2{
+        height: 70%;
+        width: 100%;
+    }
+    
+    .sobre .row-2 .box{
+        height: 750px;
+        width: 90%;
+        border-radius: 10px;
+    }
+  
+/***/
+    .sobre .row-2 .box .col-1{
+        height: 100%;
+        width: 33%;
+        padding: 30px;
+    }
+    
+    .sobre .row-2 .box .col-1 img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .sobre .row-2 .box .col-1 h2{
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .sobre .row-2 .box .col-1 p{
+        font-size: 12px;
+        padding: 0 0 10px;
+    }
+
+    .sobre .row-2 .box .col-1 li{
+        font-size: 12px;
+    }
+    
+ /***/
+    .sobre .row-2 .box .col-2{
+        height: 100%;
+        width: 33%;
+        padding: 30px;
+    }
+
+    .sobre .row-2 .box .col-2 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-2 h2{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .sobre .row-2 .box .col-2 p{
+        font-size: 12px;
+        padding: 0 0 10px;
+    }
+
+    .sobre .row-2 .box .col-2 li{
+        font-size: 12px;
+    }
+    
+/***/
+    .sobre .row-2 .box .col-3{
+        height: 100%;
+        width: 33%;
+        padding: 30px;
+    }
+
+    .sobre .row-2 .box .col-3 img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .sobre .row-2 .box .col-3 h2{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .sobre .row-2 .box .col-3 p{
+        font-size: 12px;
+        padding: 0 0 10px;
+    }
+
+    .sobre .row-2 .box .col-3 li{
+        font-size: 12px;
+    }
+
+/***/
+    .projetos{
+        height: 1050px;
+        width: 100%;
+    }
+
+    .projetos .row-1{
+        height: 150px;
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+
+    .projetos .row-1 h2, h4{
+        text-align: center;
+    }
+
+    .projetos .row-2{
+        padding: 10px 30px 10px 50px;
+        height: auto;
+        min-height: 550px;
+        width: 100%;;
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    }
+
+    .projetos .row-2 .card{
+        border-radius: 5px;
+        height: 250px;
+        width: 300px;
+    }
+
+    .projetos .row-2 .card .row-row-1{
+        height: 70%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-1 img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .projetos .row-2 .card .row-row-2{
+        height: 30%;
+        width: 100%;
+    }
+
+    .projetos .row-2 .card .row-row-2 h2, a{
+        font-size: 12px;
+    }
+
+    .projetos .row-2 .card .row-row-2 p{
+        font-size: 10px;
+    }
+
+    .projetos .row-3{
+        height: 100px;
+        width: 100%;
+    }
+
+    .projetos .row-3 .btn-ir-github{
+        margin-top: 10px;
+        flex-direction: row;
+        height: 50px;
+        width: 150px;
+    }
+
+    .projetos .row-3 .btn-ir-github:hover{
+        border: 1px solid #fff;
+    }
+
+/***/    
+    .contato{
+        height: 600px;
+        width: 100%;
+    }
+
+    .contato .row-1{
+        height: 150px;
+        width: 100%;
+    }
+
+    .contato .row-1 h2{
+        text-align: center;
+    }
+
+    .contato .row-2{
+        height: 400px;
+        width: 100%;
+    }
+
+    .contato .row-2 .col-1{
+        height: 100%;
+        width: 100%;
+        padding: 0 50px 0 50px;
+    }
+
+    .contato .row-2 .col-1 .card{
+        height: 100px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .contato .row-2 .col-2{
+        height: 0;
+        width: 0;
+    }
+
+/***/
+    .footer{
+        height: 150px;
+        width: 100%;
+    }
+
+    .footer .contato-icones{
+        height: 100px;
+        width: 200px;
+    }
+
+    .footer .contato-icones a{
+        padding: 0 20px;
+    }
+
+    .footer .contato-icones i{
+        font-size: 20px;
+    }
+
+    .footer p, a{
+        font-size: 12px;
+    }
+}

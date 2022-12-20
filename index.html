@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS local-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.2.js"
+      integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfólio</title>
+  </head>
+  <body>
+
+    <!--Scroll Up-->
+    <div class="btn-scroll-up">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar">
+      <div class="logo">
+        <span class="menu-icon"><i class="fa-solid fa-bars"></i></span><h2>meu <span>portfólio</span></h2>
+      </div>
+      <div class="menu-itens">
+        <a href="#header">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+
+    <!--Sidenav Mobile-->
+    <nav class="sidenav">
+        <a href="#header"><i class="fa-sharp fa-solid fa-house"></i> Início</a>
+        <a href="#sobre"><i class="fa-solid fa-user"></i> Sobre mim</a>
+        <a href="#projetos"><i class="fa-solid fa-code"></i> Projetos</a>
+        <a href="#contato"><i class="fa-solid fa-address-book"></i> Contato</a>
+        <a href="#header"><i class="fa-solid fa-circle-xmark"></i> Sair</a>
+    </nav>
+
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="col-1">
+            <h2>Olá &#128075;, eu sou</h2>
+            <h1>Edder Luan</h1>
+            <h3>Analista e desenvolvedor Java</h3>
+            <a href="https://linkedin.com/in/edderluanps" class="btn-ver-linkedin">Ver LinkedIn</a>
+        </div>
+
+        <div class="col-2">
+            <img src="assets/imgs/img-1.png" alt="">
+        </div>
+    </header>
+
+    <!--Header-->
+    <section class="sobre" id="sobre">
+        <div class="row-1">
+            <h2>Olá, eu sou Edder Luan, prazer em conhecer.</h2>
+            <p>
+                Minha jornada na área de desenvolvimento de softwares começou em 2019, quando ingressei no curso de Sistemas de Informação na Unifacol. Em 2020 resolvi me aprofundar no Java como principal linguagem de programação. Em 2021 vendi meu primeiro projeto, e também tive os primeiros contatos com Angular e React, visando integrar os meus projetos Back-end desenvolvidos com Java à uma interface Front-end também desenvolvida por mim.
+            </p>
+        </div>
+
+        <div class="row-2">
+            <div class="box">
+                <div class="col-1">
+                    <img src="https://cdn3.iconfinder.com/data/icons/illustricon-tech/512/development.browser.gears.-512.png" alt="">
+                    <h2>Desenvolvimento Backend</h2>
+                    <p>Um pequeno resumo sobre algumas das minhas habilidades e experiência com a linguagem Java.</p>
+                    <h2>Projetos:</h2>
+                    <p>Sistemas de cadastro e PDVs para desktop, APIs Rest e Webservices.</p>
+                    <h2>Frameworks e Libs:</h2>
+                    <ul>
+                        <li>Spring</li>
+                        <li>JPA/Hibernate</li>
+                        <li>Maven</li>
+                        <li>JSP/JSF</li>
+                        <li>Primefaces</li>
+                        <li>Thymeleaf</li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <img src="https://cdn3.iconfinder.com/data/icons/illustricon-tech/512/browser.development-512.png" alt="">
+                    <h2>Desenvolvimento Frontend</h2>
+                    <p>Um breve resumo sobre algumas das minhas atividades e experiência relacionadas ao Desenvolvimento Frontend.</p>
+                    <h2>Projetos:</h2>
+                    <p>Landing pages, sites consumindo minhas proprias APIs, blogs, etc.</p>
+                    <h2>Frameworks e Libs:</h2>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Angular</li>
+                        <li>ReactJS</li>
+                        <li>JQuery</li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <img src="https://cdn1.iconfinder.com/data/icons/trade-cool-vector-1/128/25-512.png" alt="">
+                    <h2>Banco de dados e outras ferramentas</h2>
+                    <p>Uma breve descrição sobre as ferramentas que costumo utilizar.</p>
+                    <h2>Banco de dados:</h2>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MS SQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <h2>Outras ferramentas:</h2>
+                    <ul>
+                        <li>Git/Github</li>
+                        <li>Docker</li>
+                        <li>Heroku</li>
+                        <li>CI/CD</li>
+                        <li>Scrum</li>
+                        <li>Trello</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projetos-->
+    <section class="projetos" id="projetos">
+        <div class="row-1">
+            <h2>Projetos</h2>
+            <p>Alguns dos projetos realizados</p>
+        </div>
+
+        <div class="row-2">
+
+            <div class="card">
+                <div class="row-row-1">
+                    <img src="https://dkrn4sk0rn31v.cloudfront.net/uploads/2020/11/o-que-e-o-spring.png" alt="">
+                </div>
+                <div class="row-row-2">
+                    <a href="https://github.com/edderluanps/springboot-api-rest"><h2>Fórum de usuários</h2></a>
+                    <p>API Rest desenvolvida com Spring Boot e banco NoSQL MongoDB</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="row-row-1">
+                    <img src="https://blog.rocketseat.com.br/content/images/2018/12/3-passos-para-aprender-react-native.png" alt="">
+                </div>
+                <div class="row-row-2">
+                    <a href="https://github.com/edderluanps/dsmovie"><h2>Sistema de avaliações de filmes</h2></a>
+                    <p>Desenvolvido com Spring, PostgreSQL e ReactJS</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="row-row-1">
+                    <img src="https://www.informatik-aktuell.de/fileadmin/templates/wr/pics/Artikel/02_Entwicklung/Programmiersprachen/720-Angular.jpg" alt="">
+                </div>
+                <div class="row-row-2">
+                    <a href="https://github.com/edderluanps/travel-app"><h2>Sistema de Agencia de pacotes turísticos</h2></a>
+                    <p>Desenvolvido com Java Spring, MySQL e Angular.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row-3">
+            <a href="https://github.com/edderluanps" class="btn-ir-github" >Ir para o GitHub</a>
+        </div>
+
+    </section>
+
+    <!--Contato-->
+    <section class="contato" id="contato">
+        <div class="row-1">
+            <h2>Informações adicionais</h2>
+            <p>Nome, endereço, contato</p>
+        </div>
+
+        <div class="row-2">
+            <div class="col-1">
+                <div class="card">
+                    <span class="icon"><i class="fa-solid fa-id-card-clip"></i></span>
+                    <div class="dados">
+                        <h4>Nome</h4>
+                        <h5>Edder Luan</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <div class="dados">
+                        <h4>Endereço</h4>
+                        <h5>Pernambuco - PE, Brasil</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <div class="dados">
+                        <h4>Email</h4>
+                        <h5>eluann100@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-2">
+                <img src="assets/imgs/img-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="contato-icones">
+            <a href="https://linkedin.com/in/edderluanps"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/edderluanps"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:eluann100@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+
+        <p>2022 - <a href="https://github.com/edderluanps">Edder Luan</a> - All rights reserved</p>
+
+    </footer>
+
+  </body>
+  <!--JS local-->
+  <script src="js/scripts.js"></script>
+</html>
