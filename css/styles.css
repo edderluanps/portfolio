@@ -83,7 +83,7 @@ html, body {
 .navbar.sticky {
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 60px;
     width: 100%;
 }
 
@@ -130,6 +130,7 @@ html, body {
 .sidenav{
     position: fixed;
     display: block;
+    bottom: 0;
     height: 100%;
     width: 100%;
     background: #02040c;
@@ -232,7 +233,7 @@ html, body {
 .sobre .row-1{
     height: 30%;
     width: 100%;
-    padding: 50px 450px;
+    padding: 50px 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
