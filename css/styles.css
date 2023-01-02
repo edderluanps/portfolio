@@ -129,6 +129,7 @@ html, body {
 /*Sidenav - Mobile*/
 .sidenav{
     position: fixed;
+    display: block;
     height: 100%;
     width: 100%;
     background: #02040c;
@@ -136,12 +137,12 @@ html, body {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 60px 20px;
+    padding: 20px 0 300px 20px;
     transition: all 0.8s ease;
 }
 
 .sidenav a{
-    font-size: 50px;
+    font-size: 30px;
     transition: all 0.5s ease;
 }
 
