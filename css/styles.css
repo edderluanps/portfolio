@@ -83,7 +83,7 @@ html, body {
 .navbar.sticky {
     position: fixed;
     top: 0;
-    height: 60px;
+    height: 50px;
     width: 100%;
 }
 
@@ -140,6 +140,14 @@ html, body {
     align-items: flex-start;
     padding: 20px 0 300px 20px;
     transition: all 0.8s ease;
+}
+
+.sidenav p{
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    width: 90%;
 }
 
 .sidenav a{

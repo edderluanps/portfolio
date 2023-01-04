@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".sidenav").toggle();
     $(window).scroll(function () {
-        if (this.scrollY > 20) {
+        if (this.scrollY) {
             $('.navbar').addClass("sticky");
 
         } else {
